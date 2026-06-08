@@ -34,9 +34,9 @@
 # num1 = int(input("введите число: "))
 # if num1>=0 or num1<=10:
 #     print("да")
+# # else:
+# #     print ("нет")
+# print ("да")
 # else:
 #     print ("нет")
-print ("да")
-else:
-    print ("нет")
 
