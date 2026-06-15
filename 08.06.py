@@ -65,13 +65,13 @@
 #         print(n)
 #         n-=10
 
-n = int(input("введите количество чисел: "))
-s=0
-while n>0:
-    a = int(input("введите число: "))
-    s+=a
-    n-=1
-print(s)
+# n = int(input("введите количество чисел: "))
+# s=0
+# while n>0:
+#     a = int(input("введите число: "))
+#     s+=a
+#     n-=1
+# print(s)
 
 
 
