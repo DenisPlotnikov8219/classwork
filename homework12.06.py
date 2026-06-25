@@ -25,7 +25,7 @@
 # for i in range(1, a + 1):
 #
 #  if a % i == 0:
-#   print(i)
+#     print(i)
 
 # Определить количество цифр в введенном числе.
 
@@ -38,36 +38,36 @@
 
 # Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран. Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем.
 
-positive = 0
-negative = 0
-zero = 0
-even = 0
-odd = 0
-
-
-for i in range(10):
-
-    num = int(input(f"Введите число {i + 1}: "))
-
-    if num == 0:
-        zero += 1
-    elif num > 0:
-        positive += 1
-
-    if num % 2 == 0:
-        even += 1
-    else:
-        odd += 1
-    else:
-        negative += 1
-
-    if num % 2 == 0:
-        even += 1
-    else:
-        odd += 1
-
-print(f"Положительных чисел: {positive}")
-print(f"Отрицательных чисел: {negative}")
-print(f"Нулей: {zero}")
-print(f"Чётных чисел: {even}")
-print(f"Нечётных чисел: {odd}")
+# positive = 0
+# negative = 0
+# zero = 0
+# even = 0
+# odd = 0
+#
+#
+# for i in range(10):
+#
+#     num = int(input(f"Введите число {i + 1}: "))
+#
+#     if num == 0:
+#         zero += 1
+#     elif num > 0:
+#         positive += 1
+#
+#     if num % 2 == 0:
+#         even += 1
+#     else:
+#         odd += 1
+# else:
+#         negative += 1
+#
+# if num % 2 == 0:
+#         even += 1
+# else:
+#         odd += 1
+#
+# print(f"Положительных чисел: {positive}")
+# print(f"Отрицательных чисел: {negative}")
+# print(f"Нулей: {zero}")
+# print(f"Чётных чисел: {even}")
+# print(f"Нечётных чисел: {odd}")

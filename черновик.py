@@ -93,8 +93,8 @@
 # for i in range(0, n):
 #     for j in range(0, m):
 #         print(end=" ")
-#     m = m - 1 # уменьшение m после каждого прохода цикла
+#     m = m - 1
 #     for j in range(0, i + 1):
-#         # вывод пирамиды из звёздочек
+#
 #         print("*", end=' ')
 #     print(" ")
