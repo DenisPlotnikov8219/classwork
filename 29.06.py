@@ -9,13 +9,13 @@
 
 
 # делать все положительные
-# marks = [2, 3, -4, 3, 8, -9, 9, 0, -4 ]
+# marks = [2, 3, -4, 3, 8, -9, 9, 0, -4]
 # for i in marks:
 #     if i<0:
-# for i in range (len(marks)):
-#     if marks[i]<0:
-#         marks[i]*=-1
-#         print(i, end=" ")
+#         for i in range(len(marks)):
+#             if marks[i]<0:
+#                 marks[i]*=-1
+#     print(i, end=" ")
 
 # вывести задам наперед
 # marks = [2, 3, -4, 3, 8]
