@@ -68,9 +68,9 @@ import random
 #     for i in list1:
 #         summ+=1
 #         return summ/len(list1)
-school = [[2,3,5,2,5,4,6,3],
-          [2,4,5,3],
-          [2,5,4,4,4,4,4]]
+# school = [[2,3,5,2,5,4,6,3],
+#           [2,4,5,3],
+#           [2,5,4,4,4,4,4]]
 # summa=0
 # for i in school:
 #     summa+=aver(i)
@@ -82,10 +82,10 @@ school = [[2,3,5,2,5,4,6,3],
 #             max=list1[i]
 #     return max
 # print(i)
-
-maximum = 0
-for i in range(len(school)):
-    if max < maximum(school[i]):
-        max = school[i]
-        index_max = i
-print(index_max[i])
+#
+# maximum = 0
+# for i in range(len(school)):
+#     if max < maximum(school[i]):
+#             max = school[i]
+#             index_max = i
+#             print(index_max[i])
