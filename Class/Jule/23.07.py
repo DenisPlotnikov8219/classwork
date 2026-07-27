@@ -66,9 +66,34 @@
 
 
 # 8. Напишите функцию определяющую наличие переданного ей числа в одномерном списке чисел.
-
+# def num_in_list(ls, num):
+#     for i in ls:
+#         if num == i:
+#             return True
+#         return False
 
 # 9. Напишите
+
+# def all_even_nums(ls):
+#     result = []
+#     for i in ls:
+#         if i%2:
+#             result.append(i)
+#     return result
+
+# 10.
+# def get_column(ls, column_index):
+#     result = []
+#     for i in ls:
+#         result.append(i[column_index])
+#     return result
+
+
+# 11.
+def all_numbers(st):
+    result = []
+    ls st.
+
 
 
 # 12. Написать программу создавать студента, ...
@@ -96,7 +121,7 @@
 #             students.pop(index-1)
 #             students_marks.pop(index-1)
 #         else:
-#             print("Tакого студента нет")
+#             print("Tакого студента нет")+
 #     elif var == 4:
 #         index = int(input("Bведите номер студента: "))
 #         if index < 1 or index>len(students):
