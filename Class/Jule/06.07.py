@@ -48,15 +48,15 @@
 
 
 
-s=0
-def show_list(list):
-    sum(list)
-
-a = int(input("Введите число "))
-
-counter = 0
-show_list()
-print(show_list())
+# s=0
+# def show_list(list):
+#     sum(list)
+#
+# a = int(input("Введите число "))
+#
+# counter = 0
+# show_list()
+# print(show_list())
 
 
 
