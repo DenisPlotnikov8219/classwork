@@ -1,0 +1,110 @@
+import random
+class NegativeCostError(ValueError):
+
+    pass
+
+class ImmutableNumberError(AttributeError):
+
+    pass
+
+class Car:
+    def __init__(self, color: str, cost: float, owner: str):
+        self._color = color
+        self.cost = cost
+        self._owner = owner
+        self._number = self._generate_number()
+
+    def _generate_number(self) -> int:
+
+        return random.randint(100, 999)
+
+    @property
+    def number(self) -> int:
+        return self._number
+
+    @property
+    def color(self) -> str:
+
+        return self._color
+
+    @color.setter
+    def color(self, value: str):
+
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError("Цвет должен быть.")
+        self._color = value
+
+    @property
+    def cost(self) -> float:
+
+        return self._cost
+
+    @cost.setter
+    def cost(self, value: float):
+
+        if value < 0:
+            raise NegativeCostError("Стоимость машины не может быть отрицательной.")
+        self._cost = float(value)
+
+    @property
+    def owner(self) -> str:
+
+        return self._owner
+
+    @owner.setter
+    def owner(self, value: str):
+
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError("Владелец не должен быть непустой строкой.")
+        self._owner = value
+
+    @number.setter
+    def number(self, value):
+        raise ImmutableNumberError("Номер машины присваивается при создании и не подлежит изменению.")
+
+    def get_info(self) -> str:
+
+        return (f"Автомобиль #{self.number}\n"
+                f"Цвет: {self.color}\n"
+                f"Стоимость: {self.cost:.2f} руб.\n"
+                f"Владелец: {self.owner}")
+
+try:
+
+    car1 = Car("Красный", 1500000, "Иван Петров")
+    car2 = Car("Синий", 850000.50, "Анна Смирнова")
+    car3 = Car("Белый", 2300000, "Игорь Иванов»")
+
+
+    print(car1.get_info())
+    print("-" * 20)
+    print(car2.get_info())
+    print("-" * 20)
+
+
+    car1.color = "Черный матовый"
+    car1.cost = 1450000
+    car1.owner = "Алексей Волков"
+    print("\nПосле изменений:")
+    print(car1.get_info())
+
+    print("-" * 20)
+
+    try:
+        car3.cost = -50000
+    except NegativeCostError as e:
+        print(f"\nОшибка стоимости: {e}")
+
+    try:
+        car2.number = 777
+    except ImmutableNumberError as e:
+        print(f"\nОшибка номера: {e}")
+
+    try:
+        car1.owner = ""
+    except ValueError as e:
+        print(f"\nОшибка данных: {e}")
+
+except Exception as e:
+    
+    print(f"Произошла непредвиденная ошибка: {e}")
